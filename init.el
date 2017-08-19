@@ -43,6 +43,8 @@
 (when (memq window-system '(mac ns))
   (exec-path-from-shell-initialize))
 
+(global-auto-revert-mode t)
+
 (require 'hungry-delete)
 (global-hungry-delete-mode)
 
