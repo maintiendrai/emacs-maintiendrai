@@ -22,6 +22,7 @@
 				   js2-mode
 				   nodejs-repl
 				   exec-path-from-shell
+				   popwin
 
                 )  "Default packages")
 
@@ -88,6 +89,7 @@
 (setq-default cursor-type 'bar)
 
 (setq make-backup-files nil)
+(setq auto-save-default nil)
 
 
 (require 'org)
@@ -115,7 +117,11 @@
 (global-set-key (kbd "C-h C-k") 'find-function-on-key)
 
   (setq org-agenda-files '("~/org"))
-  (global-set-key (kbd "C-c a") 'org-agenda)
+(global-set-key (kbd "C-c a") 'org-agenda)
+
+(require 'popwin)
+   ;;when require, wh(setq company-minimum-prefix-length 1)en not require
+(popwin-mode t)
 
 
 (custom-set-variables
