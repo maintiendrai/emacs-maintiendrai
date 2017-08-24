@@ -12,14 +12,20 @@
 
 ;; add more personal func
 ;; new init-func.el
+;;(require 'init-func.el)
 
-;; (require 'init-func.el)
 (require 'init-packages)
 (require 'init-ui)
 (require 'init-better-defaults)
-(require 'init-keybindings)
+;;(require 'init-keybindings)
+(load "init-keybindings")
 (require 'init-org)
 
+;;(load-file "~/.emacs.d/lisp/init-packages.el")
+;;(load-file "~/.emacs.d/lisp/init-ui.el")
+;;(load-file "~/.emacs.d/lisp/init-better-defaults.el")
+;;(load-file "~/.emacs.d/lisp/init-keybindings.el")
+;;(load-file "~/.emacs.d/lisp/init-org.el")
 
 ;; load-file and load
 
