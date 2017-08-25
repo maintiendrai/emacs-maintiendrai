@@ -26,5 +26,11 @@
 
 (delete-selection-mode t)
 
+;;;###autoload
+(defun test-autoload()
+  (interactive)
+  (message "test autoload"))
+(test-autoload)
+
 
 (provide 'init-better-defaults)
