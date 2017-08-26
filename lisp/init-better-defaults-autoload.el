@@ -3,9 +3,9 @@
 ;;; Code:
 
 
-;;;### (autoloads nil "init-better-defaults" "init-better-defaults.el"
-;;;;;;  (22944 17629 0 0))
-;;; Generated autoloads from init-better-defaults.el
+;;;### (autoloads nil "init-better-defaults" "../../../../../../Users/mindboggling/.emacs.d/lisp/init-better-defaults.el"
+;;;;;;  (22945 12336 0 0))
+;;; Generated autoloads from ../../../../../../Users/mindboggling/.emacs.d/lisp/init-better-defaults.el
 
 (autoload 'test-autoload "init-better-defaults" "\
 

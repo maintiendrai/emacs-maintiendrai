@@ -14,18 +14,32 @@
 ;; new init-func.el
 ;;(require 'init-func.el)
 
-(require 'init-packages)
-(require 'init-ui)
-(require 'init-better-defaults)
+;;(require 'init-packages)
+;;(require 'init-ui)
+;;(require 'init-better-defaults)
 ;;(require 'init-keybindings)
-(load "init-keybindings")
-(require 'init-org)
+;;(require 'init-org)
 
-;;(load-file "~/.emacs.d/lisp/init-packages.el")
-;;(load-file "~/.emacs.d/lisp/init-ui.el")
-;;(load-file "~/.emacs.d/lisp/init-better-defaults.el")
-;;(load-file "~/.emacs.d/lisp/init-keybindings.el")
-;;(load-file "~/.emacs.d/lisp/init-org.el")
+
+;;(load "init-packages")
+;;(load "init-ui")
+;;(load "init-better-defaults")
+;;(load "init-keybindings")
+;;(load "init-org")
+
+
+
+(load-file "~/.emacs.d/lisp/init-packages.el")
+(load-file "~/.emacs.d/lisp/init-ui.el")
+(load-file "~/.emacs.d/lisp/init-better-defaults.el")
+;;(load-file "~/.emacs.d/lisp/init-keybindings.elc")
+(load-file "~/.emacs.d/lisp/init-keybindings.el")
+(load-file "~/.emacs.d/lisp/init-org.el")
+(autoload 'tqqest-autoload "init-better-defaults")
+(test-autoload)
+
+(update-file-autoloads "~/.emacs.d/lisp/init-better-defaults.el" t "~/.emacs.d/lisp/init-better-defaults-autoload.el")
+(load "init-better-defaults-autoload")
 
 ;; load-file and load
 

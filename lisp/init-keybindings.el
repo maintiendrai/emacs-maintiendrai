@@ -18,6 +18,12 @@
 (global-set-key (kbd "C-c a") 'org-agenda)
 (global-set-key (kbd "C-M-\\") 'indent-region-or-buffer)
 
+(global-set-key (kbd "s-/") 'hippie-expand)
+
+(put 'dired-find-alternate-file 'disabled nil)
+
+(with-eval-after-load 'dired
+  (define-key dired-mode-map (kbd "RET") 'dired-find-alternate-file))
 
 
 (provide 'init-keybindings)
