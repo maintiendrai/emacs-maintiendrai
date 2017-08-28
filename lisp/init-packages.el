@@ -18,6 +18,7 @@
 				   exec-path-from-shell
 				   popwin
 				   reveal-in-osx-finder
+				   web-mode
 
                 )  "Default packages")
 
