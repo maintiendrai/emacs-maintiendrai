@@ -91,4 +91,21 @@
   (goto-char (point-min))
   (while (search-forward "\r" nil t) (replace-match "")))
 
+
+;; dwin means do what i means
+ (defun occur-dwim ()
+    "Call `occur' with a sane default."
+    (interactive)
+    (push (if (region-active-p)
+              (buffer-substring-no-properties
+               (region-beginning)
+               (region-end))
+            (let ((sym (thing-at-point 'symbol)))
+              (when (stringp sym)
+                (regexp-quote sym))))
+          regexp-history)
+    (call-interactively 'occur))
+
+  (global-set-key [kbd "M-s o"] 'occur-dwim)
+
 (provide 'init-better-defaults)
