@@ -94,7 +94,11 @@
 
     (setq indent-tabs-mode nil))
 
-  (global-set-key (kbd "C-c t i") 'my-toggle-web-indent)
+(global-set-key (kbd "C-c t i") 'my-toggle-web-indent)
+
+;; config for js2-refactor
+(add-hook 'js2-mode-hook #'js2-refactor-mode)
+(js2r-add-keybindings-with-prefix "C-c C-m")
 
 (load-theme 'monokai t) 
 

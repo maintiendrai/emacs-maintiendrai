@@ -91,5 +91,4 @@
   (goto-char (point-min))
   (while (search-forward "\r" nil t) (replace-match "")))
 
-
 (provide 'init-better-defaults)
