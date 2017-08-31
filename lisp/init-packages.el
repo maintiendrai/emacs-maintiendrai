@@ -100,6 +100,8 @@
 (add-hook 'js2-mode-hook #'js2-refactor-mode)
 (js2r-add-keybindings-with-prefix "C-c C-m")
 
+(global-set-key (kbd "M-s i") 'counsel-imenu)
+
 (load-theme 'monokai t) 
 
 (require 'popwin)
