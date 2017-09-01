@@ -22,6 +22,7 @@
 				   js2-refactor
 				   expand-region
 				   iedit
+				   org-pomodoro
 
                 )  "Default packages")
 
@@ -131,5 +132,7 @@
 
 (global-set-key (kbd "C-=") 'er/expand-region)
 (global-set-key (kbd "M-s e") 'iedit-mode)
+
+(require 'org-pomodoro)
 
 (provide 'init-packages)

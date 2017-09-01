@@ -106,6 +106,7 @@
           regexp-history)
     (call-interactively 'occur))
 
-  (global-set-key [kbd "M-s o"] 'occur-dwim)
+(global-set-key [kbd "M-s o"] 'occur-dwim)
+(set-language-environment "UTF-8")
 
 (provide 'init-better-defaults)
