@@ -130,5 +130,6 @@
 (popwin-mode t)
 
 (global-set-key (kbd "C-=") 'er/expand-region)
+(global-set-key (kbd "M-s e") 'iedit-mode)
 
 (provide 'init-packages)
