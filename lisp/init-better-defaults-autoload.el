@@ -4,7 +4,7 @@
 
 
 ;;;### (autoloads nil "init-better-defaults" "../../../../../../Users/mindboggling/.emacs.d/lisp/init-better-defaults.el"
-;;;;;;  (22953 32385 0 0))
+;;;;;;  (22957 28393 0 0))
 ;;; Generated autoloads from ../../../../../../Users/mindboggling/.emacs.d/lisp/init-better-defaults.el
 
 (autoload 'test-autoload "init-better-defaults" "\
