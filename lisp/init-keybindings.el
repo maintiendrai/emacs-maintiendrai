@@ -22,6 +22,8 @@
 
 (put 'dired-find-alternate-file 'disabled nil)
 
+(global-set-key (kbd "M-s e") 'iedit-mode)
+
 (with-eval-after-load 'company
   (define-key company-active-map (kbd "M-n") nil)
   (define-key company-active-map (kbd "M-p") nil)
