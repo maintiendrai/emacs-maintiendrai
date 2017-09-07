@@ -33,5 +33,7 @@
 (with-eval-after-load 'dired
   (define-key dired-mode-map (kbd "RET") 'dired-find-alternate-file))
 
+(global-set-key (kbd "C-c p s") 'helm-do-ag-project-root)
+
 
 (provide 'init-keybindings)
