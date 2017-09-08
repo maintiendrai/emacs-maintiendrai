@@ -24,6 +24,7 @@
 				   iedit
 				   org-pomodoro
 				   helm-ag
+				   flycheck
 
                 )  "Default packages")
 
