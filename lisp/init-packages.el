@@ -137,4 +137,6 @@
 
 (require 'org-pomodoro)
 
+(add-hook 'js2-mode-hook 'flycheck-mode)
+
 (provide 'init-packages)
